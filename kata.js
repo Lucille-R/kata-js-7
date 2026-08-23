@@ -9,13 +9,17 @@
 
 // ─── 1 ─── Renvoie un tableau contenant seulement les libellés des objets.
 export function listerLibelles(objets) {
-
+   return objets.map((objet) => {
+      return objet.libelle;
+   });
 }
 
 
 // ─── 2 ─── Renvoie les objets dont le statut correspond à celui demandé.
 export function filtrerParStatut(objets, statut) {
-
+   return objets.filter((objet) => {
+      return objet.statut === statut;
+   });
 }
 
 
